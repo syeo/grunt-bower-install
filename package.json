@@ -1,7 +1,7 @@
 {
   "name": "grunt-bower-copy",
   "description": "Collect&copy all main filse of your Bower dependencies.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": {
     "name": "Stanley Yeo",
     "email": "yyoud88@gmail.com",
@@ -25,10 +25,12 @@
   "bugs": {
     "url": "https://github.com/syeo/grunt-bower-copy/issues"
   },
-  "licenses": [{
-    "type": "MIT",
-    "url": "https://github.com/syeo/grunt-bower-copy/blob/master/LICENSE-MIT"
-  }],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/syeo/grunt-bower-copy/blob/master/LICENSE-MIT"
+    }
+  ],
   "main": "Gruntfile.js",
   "engines": {
     "node": ">=0.8.0",
@@ -46,6 +48,7 @@
     "grunt-contrib-watch": "~0.2.0"
   },
   "dependencies": {
-    "copydep": "0.0.5"
+    "copydep": "0.0.5",
+    "lodash": "~2.3.0"
   }
 }
