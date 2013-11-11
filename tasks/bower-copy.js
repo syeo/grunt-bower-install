@@ -1,13 +1,13 @@
 /*
- * grunt-bower.js
- * https://github.com/stephenplusplus/bower-install
+ * bower-copy.js
+ * https://github.com/syeo/bower-copy
  *
- * Copyright (c) 2013 Stephen Sawchuk
+ * Copyright (c) 2013 Stanley Yeo
  * Licensed under the MIT license.
  */
 
 var grunt = require('grunt');
-var wiredep = require('wiredep');
+var copydep = require('copydep');
 
 
 /**
@@ -75,17 +75,12 @@ var findBowerDirectory = function () {
 
 module.exports = function (grunt) {
 
-  grunt.registerMultiTask('bower-install', 'Inject all components in your HTML file.', function () {
-
-    this.requiresConfig(['bower-install', this.target, 'html']);
-
-    wiredep({
+  grunt.registerMultiTask('bower-copy', 'Copy mains of all components.', function () {
+    this.requiresConfig(['bower-copy', 'target']);
+    copydep({
       directory: findBowerDirectory(),
       bowerJson: findBowerJSON(),
-      ignorePath: this.data.ignorePath,
-      htmlFile: this.data.html,
-      cssPattern: this.data.cssPattern,
-      jsPattern: this.data.jsPattern
+      target: this.data.target
     });
   });
 };

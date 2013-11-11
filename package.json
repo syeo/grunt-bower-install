@@ -1,12 +1,11 @@
 {
-  "name": "grunt-bower-install",
-  "description": "Inject your Bower dependencies right into your HTML from Grunt.",
-  "version": "0.6.1",
-  "homepage": "http://stephenplusplus.github.io/grunt-bower-install",
+  "name": "grunt-bower-copy",
+  "description": "Collect&copy all main filse of your Bower dependencies.",
+  "version": "0.0.1",
   "author": {
-    "name": "Stephen Sawchuk",
-    "email": "sawchuk@gmail.com",
-    "url": "http://github.com/stephenplusplus"
+    "name": "Stanley Yeo",
+    "email": "yyoud88@gmail.com",
+    "url": "http://github.com/syeo"
   },
   "keywords": [
     "gruntplugin",
@@ -21,14 +20,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/stephenplusplus/grunt-bower-install.git"
+    "url": "git://github.com/syeo/grunt-bower-copy.git"
   },
   "bugs": {
-    "url": "https://github.com/stephenplusplus/grunt-bower-install/issues"
+    "url": "https://github.com/syeo/grunt-bower-copy/issues"
   },
   "licenses": [{
     "type": "MIT",
-    "url": "https://github.com/stephenplusplus/grunt-bower-install/blob/master/LICENSE-MIT"
+    "url": "https://github.com/syeo/grunt-bower-copy/blob/master/LICENSE-MIT"
   }],
   "main": "Gruntfile.js",
   "engines": {
@@ -47,6 +46,6 @@
     "grunt-contrib-watch": "~0.2.0"
   },
   "dependencies": {
-    "wiredep": "~0.3.0"
+    "copydep": "0.0.5"
   }
 }

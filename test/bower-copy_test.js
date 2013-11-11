@@ -1,6 +1,6 @@
 'use strict';
 
-var bower_install = require('../lib/grunt-bower-install');
+// var bower_copy = require('../lib/grunt-bower-copy');
 
 /*
   ======== A Handy Little Nodeunit Reference ========
