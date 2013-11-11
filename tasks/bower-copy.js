@@ -76,7 +76,7 @@ var findBowerDirectory = function () {
 module.exports = function (grunt) {
 
   grunt.registerMultiTask('bower-copy', 'Copy mains of all components.', function () {
-    this.requiresConfig(['bower-copy', 'target']);
+    this.requiresConfig(['bower-copy', this.target, 'target']);
     copydep({
       directory: findBowerDirectory(),
       bowerJson: findBowerJSON(),

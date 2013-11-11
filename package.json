@@ -1,7 +1,7 @@
 {
   "name": "grunt-bower-copy",
   "description": "Collect&copy all main filse of your Bower dependencies.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Stanley Yeo",
     "email": "yyoud88@gmail.com",
